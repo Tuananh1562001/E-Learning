@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4School.com</title>
+    <link rel="stylesheet" href="./TrangChu/trangchu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./TrangChu/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./TrangChu/owlcarousel/owl.theme.default.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="menu" class="fas fa-bars"></div>
+        <a href="./trangchu.html" class="logo"><i class="fas fa-book-open"></i>E-LEARNING</a>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="./trangchu.html">Trang chủ</a></li>
+                <li><a href="./KhoaHoc/index.html">Khóa học</a></li>
+                <li><a href="./HsTieuBieu/hstb.html">Học sinh tiêu biểu</a></li>
+            </ul>
+        </nav>
+        <a href="./DangNhap/dnagnhap.html" id="login"><i class="fas fa-user-circle"></i></a>
+    </header>
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="./TrangChu/trangchu.js"></script>
+    <!-- slide show start  -->
+
+    <div id="slide-show">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="slide first">
+                    <img src="./image/1.png" alt="">
+
+                </div>
+                <div class="slide">
+                    <img src="./image/2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./image/3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="./image/4.jpg" alt="">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btnl"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+
+        <!-- slide show end -->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 4000)
+        </script>
+    </div>
+
+    <!-- introduce start -->
+
+    <div class="introduce">
+        <h1>Trang web học trực tuyến E-LEARNING</h1>
+        <h2>Cùng bạn viết tiếp hành trình của ước mơ <i class="far fa-paper-plane"></i> </h2>
+        <section class="gioithieu">
+            <h3>
+                <span>G</span>
+                <span>i</span>
+                <span>ớ</span>
+                <span>i</span>
+                <span class="space"></span>
+                <span>T</span>
+                <span>h</span>
+                <span>i</span>
+                <span>ệ</span>
+                <span>u</span>
+            </h3>
+        </section>
+        <div class="row">
+            <div class="col">
+                <div class="profile">
+                    <img src="./image/introCL.png" />
+                    <h4>CHẤT LƯỢNG</h4>
+                    <p>Chúng tôi đem đến những khóa học chất lượng nhất,
+
+                        đội ngũ giáo viên giảng dạy giàu kình nghiệm và cam kết
+
+                        kiến thức học sinh sẽ đạt được! </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="profile">
+
+                    <img src="./image/introDV.jfif" />
+
+                    <h4>DỊCH VỤ</h4>
+
+                    <p>Giải đáp mọi thắc mắc 24/7</p>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="profile">
+                    <img src="./image/introDD.jpg" />
+                    <h4>ĐA DẠNG</h4>
+                    <p>Mang tới hơn 1000 khóa học và 400 giảng viên
+
+                        trên toàn thế giới, giúp bạn tìm kiếm được
+
+                        sự lựa chọn phù hợp nhất!
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- introduce end -->
+
+    <!-- news start -->
+    <!-- news end -->
+
+    <!-- -----Khoa hoc------------ -->
+    
+
+    <!-- ======Phan hoi=========== -->
+    <section class="event">
+        <h1>Xu hướng 24h qua</h1>
+        <div class="event-items event-container event-row">
+            <div class="event-item">
+                <a class="event-img" href="#"><img src="./image/xuthe1.jpeg" alt=""></a>
+                <h2>Learn JavaScript-Full Course for beginners</h2>
+                <!-- <p>HTML là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web trên World Wide Web. Nó có
+                    thể được trợ giúp bởi các công nghệ như CSS và các ngôn ngữ kịch bản giống như JavaScript.</p> -->
+                <div class="event_flex_mini">
+                    <a href="https://kt.city/course/crypto-101"><img src="./image/tuananh.jpg" alt=""><span>Coin98</span></a>
+                    <a href="#"><img src="./image/image.webp" alt=""></a>
+
+                </div>
+            </div>
+            <div class="event-item">
+                <a class="event-img" href="#"><img src="./image/xuthe2.jpg" alt=""></a>
+                <h2>A CSS Flexbox Tutorial for Beginners</h2>
+                <!-- <p>HTML là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web trên World Wide Web. Nó có
+                    thể được trợ giúp bởi các công nghệ như CSS và các ngôn ngữ kịch bản giống như JavaScript.</p> -->
+                <div class="event_flex_mini">
+                    <a href="https://kt.city/course/crypto-101"><img src="./image/tuananh.jpg" alt=""><span>Coin98</span></a>
+                    <a href="#"><img src="./image/image.webp" alt=""></a>
+                </div>
+            </div>
+            <div class="event-item">
+                <a class="event-img" href="#"><img src="./image/xuthe3.jpg" alt=""></a>
+                <h2>The complete React Web Developer Course</h2>
+                <!-- <p>HTML là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web trên World Wide Web. Nó có
+                    thể được trợ giúp bởi các công nghệ như CSS và các ngôn ngữ kịch bản giống như JavaScript.</p> -->
+                <div class="event_flex_mini">
+                    <a href="https://kt.city/course/crypto-101"><img src="./image/tuananh.jpg" alt=""><span>Coin98</span></a>
+                    <a href="#"><img src="./image/image.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="event">
+        <h1>Nổi bật tháng này</h1>
+        <div class="event-items event-container event-row">
+            <div class="event-item">
+                <a class="event-img" href="#"><img src="./image/js.PNG" alt=""></a>
+                <h2>Html, Css</h2>
+                <p>HTML là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web trên World Wide Web. Nó có
+                    thể được trợ giúp bởi các công nghệ như CSS và các ngôn ngữ kịch bản giống như JavaScript.</p>
+                <div class="event_flex_mini">
+                    <a href="https://kt.city/course/crypto-101"><img src="./image/tuananh.jpg" alt=""><span>Coin98</span></a>
+                    <a href="#"><img src="./image/image.webp" alt=""></a>
+                </div>
+            </div>
+            <div class="event-item">
+                <a class="event-img" href="#"><img src="./image/html.PNG" alt=""></a>
+                <h2>JavaScript</h2>
+                <p>HTML là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web trên World Wide Web. Nó có
+                    thể được trợ giúp bởi các công nghệ như CSS và các ngôn ngữ kịch bản giống như JavaScript.</p>
+                <div class="event_flex_mini">
+                    <a href="https://kt.city/course/crypto-101"><img src="./image/tuananh.jpg" alt=""><span>Coin98</span></a>
+                    <a href="#"><img src="./image/image.webp" alt=""></a>
+                </div>
+            </div>
+            <div class="event-item">
+                <a class="event-img" href="#"><img src="./image/ktnt.PNG" alt=""></a>
+                <h2>Python</h2>
+                <p>HTML là một ngôn ngữ đánh dấu được thiết kế ra để tạo nên các trang web trên World Wide Web. Nó có
+                    thể được trợ giúp bởi các công nghệ như CSS và các ngôn ngữ kịch bản giống như JavaScript.</p>
+                <div class="event_flex_mini">
+                    <a href="https://kt.city/course/crypto-101"><img src="./image/tuananh.jpg" alt=""><span>Coin98</span></a>
+                    <a href="#"><img src="./image/image.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="section-title">
+                    <h2 data-title="Cau chuyen">Ve chung toi</h2>
+                </div> -->
+            </div>
+            <div class="row row-margin">
+                <div class="about-item">
+                    <h2>Nâng cao kiến thức của bạn lên từng ngày, có kết quả tương xứng với chu phí bỏ ra.</h2>
+                    <br>
+                    <p> Tất cả kiến thức tại E-Learning đều đươc review bởi đội ngũ chuyên gia có kinh nghiệm .Bạn hãy
+                        tin tưởng và bắt đầu trải nghiệm.</p>
+                    <br>
+                    <p> Bạn cũng có thể theo lời khuyến nghị của những cá nhân trước đó, người bạn quen hoặc các KOLs để
+                        lựa chọn kiến thức phù hợp.</p>
+                    <!-- <button class="btn">
+                    Xem them
+                </button> -->
+                </div>
+                <div class="about-item">
+                    <img src="./image/img-experts2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-margin">
+                <div class="about-item">
+                    <img src="./image/img-experts1.png" alt="">
+                </div>
+                <div class="about-item">
+                    <h2>Trở thành Expert hoặc Brand , chia sẻ kiến thức và nhận lại không giới hạn giá trị</h2>
+                    <br>
+                    <p>Xây dựng cộng đồng của riêng bạn và nhận lại không giới hạn giá trị . KTcity và hệ thống đối tác sẽ quảng bá kiến thức hữu ích tới hàng trăm ngàn cá nhân có nhu cầu cải thiện chuyên môn.</p>
+                    <br>
+                    <p>KTcity tập trung xây dựng hình ảnh, thương hiệu cho bạn 1 cách hoàn chỉnh . Ngoài ra, tất cả các vấn đề về công nghệ luôn được tối ưu.</p>
+                    <!-- <button class="btn">
+                    Xem them
+                </button> -->
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer start -->
+
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <a href="#">
+                    <h5> <i style="transform:rotate(-90deg)" class="fas fa-caret-down"></i> Chính sách trả và đổi khóa
+                        học</h5>
+                </a>
+                <a href="#">
+                    <h5> <i style="transform:rotate(-90deg)" class="fas fa-caret-down"></i> Hướng dẫn</h5>
+                </a>
+                <a href="#">
+                    <h5> <i style="transform:rotate(-90deg)" class="fas fa-caret-down"></i> Giới thiệu</h5>
+                </a>
+                <div class="content">
+                    <p>Theo dõi để cập nhật những thông tin mới nhất:</p>
+                    <div class="social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center box">
+                <h2>Địa chỉ</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">13 ngõ 719 Đê La Thành Hà Nội</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-volume"></span>
+                        <span class="text">+84 987731991</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">Tuananh15062001@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right box">
+                <h2>Liên lạc trực tiếp</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email *</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Tin nhắn *</div>
+                            <textarea cols="25" rows="2" required></textarea>
+                        </div>
+                        <div class="submit">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="theEnd">
+                <span class="credit">Created By <a href="#">E-LEARNING</a> | </span>
+                <span class="far fa-copyright"></span><span>2021 All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./TrangChu/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                1000: {
+                    items: 3
+                },
+                // 0: {
+                //     items: 2
+                // }
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Khóa Học - Toán</title>
+</head>
+<header>
+    <div id="menu" class="fas fa-bars"></div>
+    <a href="../TrangChu-AfterSignIn/trangchu.html" class="logo"><i class="fas fa-book-open"></i>E-LEARNING</a>
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="../TrangChu-AfterSignIn/trangchu.html">Trang chủ</a></li>
+            <li><a href="../KhoaHoc-AfterSignIn/index.html">Khóa học</a></li>
+            <li><a href="../HsTieuBieu-AfterSignIn/hstb.html">Học sinh tiêu biểu</a></li>
+        </ul>
+    </nav>
+    <a href="../TrangChu/trangchu.html" id="login" class="logout" >Đăng Xuất</a>
+</header>
+<body>
+    <div id="slide-show">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="slide first">
+                    <img src="../image/1.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../image/2.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../image/3.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="../image/4.jpg" alt="">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btnl"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+        </div>
+
+        <!-- slide show end -->
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 4000)
+        </script>
+
+
+    </div>
+    <div class="wrapper">
+        <nav class="nav_main">
+            <div class="items">
+                <span class="item active" data-name="all">All</span>
+                <span class="item" data-name="tuNhien">Tự nhiên</span>
+                <span class="item" data-name="xaHoi">Xã hội</span>
+                <span class="item" data-name="lapTrinh">Lập trình</span>
+                <span class="item" data-name="thietKe">Thiết kế đồ họa</span>
+                <span class="item" data-name="ngonNgu">Ngôn ngữ</span>
+                <span class="item" data-name="marketting">Online Markettng</span>
+                <!-- <span class="item" data-name="headphone">Headphone</span> -->
+            </div>
+        </nav>
+    </div>
+    <div class="gallery row" id="tuNhien">
+        <div class="image" data-name="camera" >
+            <div class="home-product-item">
+                    <div class="home-product-item-img">
+                        <center><img width="100%" height="100%" src="../image/coMinhThu.jpg" alt=""></center>
+                    </div>
+                    <h4 class="home-product-item-name">Cô Minh Thu</h4>
+                    <p>Môn học: Vật Lý 12</p>
+                    <div class="home-product-item__favourite">
+                        <i style="font-size:24px" class="fa">&#xf06e;</i>
+                        <span>4.000</span>
+                    </div>
+                <center><button style="margin-bottom: 5px;">Thông tin chi tiết</button></center>
+            </div>           
+        </div>
+
+
+        <div class="image" data-name="tuNhien" >
+            <div class="home-product-item">
+                    <div class="home-product-item-img">
+                        <center><img width="100%" height="100%" src="../image/thayMinhDuc.jpg" alt=""></center>
+                    </div>
+                    <h4 class="home-product-item-name">Thầy Minh Đức</h4>
+                    <p>Môn học: Toán 12</p>
+                    <div class="home-product-item__favourite">
+                        <i style="font-size:24px" class="fa">&#xf06e;</i>
+                        <span>3.871</span>
+                    </div>
+                <center><button style="margin-bottom: 5px;">Thông tin chi tiết</button></center>
+            </div>           
+        </div>
+
+
+        <div class="image" data-name="xaHoi" >
+            <div class="home-product-item">
+                    <div class="home-product-item-img">
+                        <center><img width="100%" height="100%" src="../image/coLanh.jpg" alt=""></center>
+                    </div>
+                    <h4 class="home-product-item-name">Cô Minh Ngọc</h4>
+                    <p>Môn học: Văn 12</p>
+                    <div class="home-product-item__favourite">
+                        <i style="font-size:24px" class="fa">&#xf06e;</i>
+                        <span>1.459</span>
+                    </div>
+                <center><button style="margin-bottom: 5px;">Thông tin chi tiết</button></center>
+            </div>
+        </div>
+
+
+        <div class="image" data-name="ngonNgu" >
+            <div class="home-product-item">
+                    <div class="home-product-item-img">
+                        <center><img width="100%" height="100%" src="../image/coTrangAnh.jpg" alt=""></center>
+                    </div>
+                    <h4 class="home-product-item-name">Cô Trang Anh</h4>
+                    <p>Môn học: Tiếng Anh 12</p>
+                    <div class="home-product-item__favourite">
+                        <i style="font-size:24px" class="fa">&#xf06e;</i>
+                        <span>2.895</span>
+                    </div>
+                <center><button style="margin-bottom: 5px;">Thông tin chi tiết</button></center>
+            </div>     
+        </div>
+
+
+        <div class="image" data-name="lapTrinh" >
+            <div class="home-product-item">
+                    <div class="home-product-item-img">
+                        <center><img width="100%" height="100%" src="../image/thayGiaoBa.jpg" alt=""></center>
+                    </div>
+                    <h4 class="home-product-item-name">Thầy Giáo Ba</h4>
+                    <p>Môn học: Liên Minh</p>
+                    <div class="home-product-item__favourite">
+                        <i style="font-size:24px" class="fa">&#xf06e;</i>
+                        <span>5.531</span>
+                    </div>
+                <center><button style="margin-bottom: 5px;">Thông tin chi tiết</button></center>
+            </div>
+        </div>
+
+
+        <div class="image" data-name="lapTrinh" >
+            <div class="home-product-item">
+                    <div class="home-product-item-img">
+                        <center><img width="100%" height="100%" src="../image/thaySonDang.jpg" alt=""></center>
+                    </div>
+                    <h4 class="home-product-item-name">Thầy Sơn Đặng</h4>
+                    <p>Lập trình: javascript</p>
+                    <div class="home-product-item__favourite">
+                        <i style="font-size:24px" class="fa">&#xf06e;</i>
+                        <span>1.230</span>
+                    </div>
+                <center><button style="margin-bottom: 5px;">Thông tin chi tiết</button></center>
+            </div>
+        </div>
+
+
+        <div class="image" data-name="tuNhien" >
+            <div class="home-product-item">
+                    <div class="home-product-item-img">
+                        <center><img width="100%" height="100%" src="../image/coHuyen.jpg" alt=""></center>
+                    </div>
+                    <h4 class="home-product-item-name">Cô Huyền</h4>
+                    <p>Môn học: Toán 9</p>
+                    <div class="home-product-item__favourite">
+                        <i style="font-size:24px" class="fa">&#xf06e;</i>
+                        <span>2.331</span>
+                    </div>
+                <center><button style="margin-bottom: 5px;">Thông tin chi tiết</button></center>
+            </div>
+        </div>
+
+
+        <div class="image" data-name="ngonNgu" >
+            <div class="home-product-item">
+                    <div class="home-product-item-img">
+                        <center><img width="100%" height="100%" src="../image/coLanAnh.jpg" alt=""></center>
+                    </div>
+                    <h4 class="home-product-item-name">Cô Lan Anh</h4>
+                    <p>Tiếng Anh: Ielts</p>
+                    <div class="home-product-item__favourite">
+                        <i style="font-size:24px" class="fa">&#xf06e;</i>
+                        <span>5.360</span>
+                    </div>
+                <center><button style="margin-bottom: 5px;">Thông tin chi tiết</button></center>
+            </div>     
+        </div>
+
+
+        <div class="image" data-name="tuNhien" >
+            <div class="home-product-item">
+                    <div class="home-product-item-img">
+                        <center><img width="100%" height="100%" src="../image/thayThuan.jpg" alt=""></center>
+                    </div>
+                    <h4 class="home-product-item-name">Thầy Thuận</h4>
+                    <p>Môn học: Hóa 9</p>
+                    <div class="home-product-item__favourite">
+                        <i style="font-size:24px" class="fa">&#xf06e;</i>
+                        <span>1.892</span>
+                    </div>
+                <center><button style="margin-bottom: 5px;">Thông tin chi tiết</button></center>
+            </div>     
+        </div>
+
+        <div class="image" data-name="tuNhien" >
+            <div class="home-product-item">
+                    <div class="home-product-item-img">
+                        <center><img width="100%" height="100%" src="../image/thayChi.jpg" alt=""></center>
+                    </div>
+                    <h4 class="home-product-item-name">Thầy Quốc Chí</h4>
+                    <p>Môn học: Toán 12</p>
+                    <div class="home-product-item__favourite">
+                        <i style="font-size:24px" class="fa">&#xf06e;</i>
+                        <span>4.321</span>
+                    </div>
+                <center><button style="margin-bottom: 5px;">Thông tin chi tiết</button></center>
+            </div>     
+        </div>
+
+        <div class="image" data-name="lapTrinh" >
+            <div class="home-product-item">
+                    <div class="home-product-item-img">
+                        <center><img width="100%" height="100%" src="../image/thayDung.jpg" alt=""></center>
+                    </div>
+                    <h4 class="home-product-item-name">Thầy Dũng</h4>
+                    <p>Lập trình: Python</p>
+                    <div class="home-product-item__favourite">
+                        <i style="font-size:24px" class="fa">&#xf06e;</i>
+                        <span>9.074</span>
+                    </div>
+                <center><button style="margin-bottom: 5px;">Thông tin chi tiết</button></center>
+            </div>     
+        </div>
+
+        <div class="image" data-name="lapTrinh" >
+            <div class="home-product-item">
+                    <div class="home-product-item-img">
+                        <center><img width="100%" height="100%" src="../image/thayHoang.jpg" alt=""></center>
+                    </div>
+                    <h4 class="home-product-item-name">Thầy Huy Hoàng</h4>
+                    <p>Lập trình: Html, Css</p>
+                    <div class="home-product-item__favourite">
+                        <i style="font-size:24px" class="fa">&#xf06e;</i>
+                        <span>3.892</span>
+                    </div>
+                    <center><button style="margin-bottom: 5px;">Thông tin chi tiết</button></center>
+            </div>     
+        </div>
+    </div>
+
+    <!-- pagination -->
+    
+
+    <ul class="pagination">
+        <li class="btn-prev pagination-item">
+            <a href="" class="pagination-iteam_link">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+        </li>
+
+        <li class="pagination-item pagination-item--active" id="number-page">
+           <a href="">1</a>
+       </li>
+
+       <li class="pagination-item" id="number-page">
+           <a href="" >2</a>
+       </li>
+
+       <li class="pagination-item" id="number-page">
+           <a href="">3</a>
+       </li>
+
+       <li class="pagination-item" id="number-page">
+           <a href="">4</a>
+       </li>
+
+       <li class="pagination-item" id="number-page">
+           <a href="">5</a>
+       </li>
+
+       <li class="pagination-item" id="number-page">
+           <a href="" >
+            <i class="btn-next fas fa-chevron-right"></i>
+           </a>
+       </li>
+   </ul>
+
+
+
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- <h2 style="color: black;padding-bottom: 20px;">Hồ sơ giáo viên</h2> -->
+            <div class="profile" style="text-align: left; color: black;">
+                <ul style="float:left;width:40%;">
+                    <h2 style="color: black;padding-bottom: 30px; font-size: 30px;">Hồ sơ giáo viên</h2>
+                    <li style="color: black;">
+                        Họ và Tên: Nguyễn Thị Minh Thu
+                    </li>
+                    <li style="color: black;">
+                        Dạy ôn thi học sinh giỏi Vật Lí lớp 9 cấp thành phố Hà Nội
+                    </li>
+                    <li style="color: black;">
+                        Dạy ôn thi Đại Học 4 năm hai môn Toán, Vật Lí
+                    </li>
+                    <li style="color: black;">
+                        Dạy Stem 6 tháng cho học sinh Tiểu học và Trung học Cơ sở
+                    </li>
+                    <h2 style="color: black;padding-bottom: 30px;font-size: 30px; padding-top: 20px;">Khóa học</h2>
+                    <li ><i class="fas fa-calendar-times"></i> 20h thứ 2 và thứ 6 hàng tuần</li>
+                    <li ><i class="fas fa-hourglass-start"></i> 20/9/2021</li>
+                    <li ><i class="fas fa-hourglass-end"></i> 15/6/2020</li>
+                    <li ><i class="fas fa-bell"></i>Nắm chắc kiến thức Vật lý 12</li>
+                    <li ><i class="fas fa-bell"></i>Đạt điểm 8, 9, 10 Kì thi THPT Quốc Gia</li>
+                </ul>
+            </div>
+            <div>
+                <video width="55%" height="400px" controls>
+                    <source src="#"
+                        type="video/mp4">
+                </video>
+                <button onclick="yeuCauDangNhap()">Đăng kí khóa học</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="../KhoaHoc-AfterSignIn/app.js"></script>
+    <script src="../KhoaHoc-AfterSignIn/app_nav.js"></script>
+    <script src="../KhoaHoc-AfterSignIn/dangki.js"></script>
+    <footer>
+        <div class="main-content">
+            <div class="left box">
+                <a href="#"><h5>  <i style="transform:rotate(-90deg)" class="fas fa-caret-down"></i> Chính sách trả và đổi khóa học</h5></a>
+                <a href="#"><h5>  <i style="transform:rotate(-90deg)" class="fas fa-caret-down"></i> Hướng dẫn</h5></a>
+                <a href="#"><h5>  <i style="transform:rotate(-90deg)" class="fas fa-caret-down"></i> Giới thiệu</h5></a>
+                <div class="content">
+                <p>Theo dõi để cập nhật những thông tin mới nhất:</p>
+                    <div class="social">
+                        <a href="#"><span class="fab fa-facebook-f"></span></a>
+                        <a href="#"><span class="fab fa-instagram"></span></a>
+                        <a href="#"><span class="fab fa-youtube"></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center box">
+                <h2>Địa chỉ</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">13 ngõ 719 Đê La Thành Hà Nội</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-volume"></span>
+                        <span class="text">+84 987731991</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">Tuananh15062001@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right box">
+                <h2>Liên lạc trực tiếp</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email *</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Tin nhắn *</div>
+                            <textarea cols="25" rows="2" required></textarea>
+                        </div>
+                        <div class="submit">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="theEnd">
+                <span class="credit">Created By <a href="#">E-LEARNING</a> | </span>
+                <span class="far fa-copyright"></span><span>2021 All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
